@@ -176,7 +176,7 @@ input {
     top: 70%;
     left: 44%;
     background-color: #007EA4;
-    padding: 15px;
+    padding: 1.5rem;
     min-width: 10.0vw; 
     color: white; 
     border-radius: 15px; 
@@ -192,7 +192,7 @@ input {
 
 .home-img
 {
-    filter: brightness(70%);
+    filter: brightness(60%);
     width: 100vw; 
 }
 
