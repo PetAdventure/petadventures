@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+    console.log('Permission Granted')
+
     const menuItems = document.querySelectorAll('.menu-item');
     const serviceItems = document.querySelectorAll('.service');
 
