@@ -6,24 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bellevue Pet Adventures</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../../dist/output.css">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="../script.js"></script>
         <script src="https://use.fontawesome.com/6fbb82520b.js"></script>
     </head>
 <body>
-    <nav class="navbar">
-        <a href="/"><img src="../images/navlogo.png" alt="Bellevue Pet Adventures"></a>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/pages/about.html">About Us</a></li>
-            <li><a href="/pages/reservations.html">Reservations</a></li>
-            <li><a href="/pages/services.html">Services</a></li>
-            <li><a href="/pages/pricing.html">Pricing</a></li>
-            <li><a href="/pages/newcustomer.html">New Customer</a></li>
-            <li><a href="/pages/join.html">Join our team!</a></li>
+    <nav class="flex flex-row justify-between items-center px-10 py-5">
+        <div class="">
+            <a href="/"><img width="150" height="150" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+        </div>
+        <ul class="flex flex-row gap-20 text-lg px-10 font-bold">
+            <li><a class="font-Gabriela" href="/">Home</a></li>
+            <li><a class="font-Gabriela" href="./about.html">About Us</a></li>
+            <li><a class="font-Gabriela" href="./reservations.html">Reservations</a></li>
+            <li><a class="font-Gabriela" href="./services.html">Services</a></li>
+            <li><a class="font-Gabriela" href="./pricing.html">Pricing</a></li>
+            <li><a class="font-Gabriela" href="./newcustomer.html">New Customer</a></li>
+            <li><a class="font-Gabriela" href="./join.html">Join our Team!</a></li>
         </ul>
-        <h1>Bellevue Pet Adventures</h1>
-        <div id="hamburger-icon">
+        <div id="hamburger-icon" class="hidden">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -38,15 +43,15 @@
             </ul>
         </div>
     </nav>
-    <div class="services-container">
-        <div class="services-menu">
-            <div class="menu-item selected">Boarding</div>
-            <div class="menu-item">Grooming</div>
-            <div class="menu-item">Daycare</div>
+    <div class="">
+        <div class="flex flex-row justify-center w-full items-center">
+            <div class="w-full selected text-center">Boarding</div>
+            <div class="w-full text-center">Grooming</div>
+            <div class="w-full text-center">Daycare</div>
         </div>
         <div class="Boarding service show">
             <h1>Boarding</h1>
-            <div class="info-container">
+            <div class="info-container">    
                 <div class="info">
                     <h3>
                         Dogs who stay at Bellevue Pet Adventures while their owners are away,
