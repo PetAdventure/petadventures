@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Playfair+Display&display=swap');
+
+@font-face {
+    font-family: "Gabriela";
+    src: url('../public/fonts/Gabriela-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: "Playfair";
+    src: url('../public/fonts/PlayfairDisplay-Regular.ttf');
+  }
+
+  * {
+    font-family: 'Playfair';
+    margin: 0; 
+    padding: 0;
+     
+  }
