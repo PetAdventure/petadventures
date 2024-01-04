@@ -43,111 +43,175 @@
             </ul>
         </div>
     </nav>
-    <div class="">
-        <div class="flex flex-row justify-center w-full items-center">
-            <div class="w-full selected text-center">Boarding</div>
-            <div class="w-full text-center">Grooming</div>
-            <div class="w-full text-center">Daycare</div>
-        </div>
-        <div class="Boarding service show">
-            <h1>Boarding</h1>
-            <div class="info-container">    
-                <div class="info">
-                    <h3>
-                        Dogs who stay at Bellevue Pet Adventures while their owners are away,
-                        will be treated to an overnight experience that maximizes comfort, safety, and cleanliness, as well as fun and relaxation.
-                        We want your pet to think they are on vacation too, without bankrupting yours!
-                    </h3>
-                    <p>
-                        We offer kennels in a variety of sizes in order to suit the needs and sizes of all breeds. Pets from the same household are welcome to share a single spacious kennel.
-                    </p>
-                    <p>
-                        All dogs boarded at Bellevue Pet Adventures get potty time or group play based on your dog's needs. If you know your pet does not “play well with others” please advise us during the consultation process. Your pet may be better suited for a private play time. If you'd like them to do group play, please make sure to schedule your Meet and Greet before your boarding reservation.
-                    </p>
-                    <p>
-                        All play times are included in the price of boarding.
-                    </p>
-                    <p>
-                        All medication administration is included in the price of boarding.
-                    </p>
-                </div>
-                <img src="/images/boarding.jpg" alt="#">
+    <section>
+        <div class="relative h-[80vh]" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../public/images/services-background.jpg'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
+            <div class="absolute top-60 left-0 transform -translate-y-1/2 translate-x-20 text-left">
+                <span class="text-xl text-white">Services</span>
+                <h1 class="text-white text-4xl">Happy To Welcome You</h1>
+                <h2 class="text-accent text-2xl pt-3 pb-10">To Our Circle Of Friends</h2>
+                <button 
+                class="bg-primary text-center px-10 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
+                href="/pages/services.html">Our Services</button>
             </div>
         </div>
-        <div class="Grooming service">
-            <h1>Grooming</h1>
-            <div class="info-container">
-                <img src="/images/grooming.jpg" alt="#">
-                <div class="info">
-                    <h3>Pet Adventures offers convenient hours. Please call for grooming prices.  You will find our prices are competitive and quite reasonable!</h3> 
-                    <p>Monday - Friday 7am - 6pm</p>
-                    <p>Saturday 8am - 4pm</p> 
-                    <h4>Regular grooming helps to keep dogs looking and feeling their best. Pet Adventures' groomers and grooming assistants will provide full-service grooming including:</h4>  
-                    <ul>
-                        <li><i class="fa fa-paw"></i>Bathing</li>
-                        <li><i class="fa fa-paw"></i>Drying</li>
-                        <li><i class="fa fa-paw"></i>Nail trimming and filing</li>
-                        <li><i class="fa fa-paw"></i>Pad shaving</li>
-                        <li><i class="fa fa-paw"></i>Ear cleaning and hair plucking</li>
-                        <li><i class="fa fa-paw"></i>Anal gland cleaning - upon request</li>
-                        <li><i class="fa fa-paw"></i>Trimming and shaping of the dog’s coat in accordance with owner preference and breed standards</li>
+    </section>
+
+    <section class="bg-modal mx-20 px-20 py-10 transform -translate-y-10">
+        <div class="flex flex-row gap-10">
+            <div class="w-3/4">
+                <div class="text-primary text-4xl">What We Offer</div>
+                <div class="text-4xl">Our Services</div>
+                <p class="pt-5 text-lg">Bellevue Pet Adventures is a locally owned and operated dog grooming, boarding, and daycare facility. We strive to provide the best in care, comfort and fun for your furry loved ones.</p>
+                <p class="py-5">If you are interested in bringing your pup to us, please review the prerequisites by clicking the button below.</p>
+                <button 
+                class="bg-primary text-center px-10 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
+                href="/pages/services.html">New Customers</button>
+            </div>
+            <div class="flex flex-col gap-4 border-background border-4 p-4">
+                <div class="flex flex-col gap-2">
+                    <div class="flex flex-row items-center gap-10">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <div class="text-xl font-bold">Boarding</div>
+                    </div>
+                    <p>We offer kennels in a variety of sizes in order to suit the needs and sizes of all breeds. Pets from the same household are welcome to share a single spacious kennel. </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex flex-row items-center gap-10">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <div class="text-xl font-bold">Grooming</div>
+                    </div>
+                    <p>Our top notch staff will have your dog looking and feeling their best. We offer hair trims, nail trims, and much more. </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex flex-row items-center gap-10">
+                        <i class="fa-solid fa-check text-primary"></i>
+                        <div class="text-xl font-bold">Daycare</div>
+                    </div>
+                    <p>Give your dog a chance to meet some new friends! Daycare provides dogs the ability to socialize and play with other dogs while our staff helps reinforce positive, social behavior.</p>
+                </div>
+            </div>    
+        </div>
+
+        <div class="mt-20">
+            <div id="service-buttons" class="flex flex-start gap-5  bg-modal ">
+                <button class="text-lg p-10 bg-background text-accent">Boarding</button>
+                <button class="text-lg p-10">Grooming</button>
+                <button class="text-lg p-10">Daycare</button>
+            </div>
+
+            <div id="service-info" class="">
+                <div id="boarding-info" class="bg-background flex flex-row gap-10 p-10">
+                    <div class="flex flex-col gap-5">
+                        <div class="text-2xl font-bold text-primary">All Boarding Suites</div>
+                        <div class="flex flex-row justify-between">
+                            <div class="text-lg text-black">One Dog</div>
+                            <div class="flex-1 border-b-2 border-dotted border-black w-60"></div>
+                            <div>$40/night</div>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <div class="text-lg text-black">Additional Dogs in the Same Suite</div>
+                            <div class="flex-1 border-b-2 border-dotted border-black w-60"></div>
+                            <div>$30/night</div>
+                        </div>
+                        <div>
+                            <p>Boarding pick-ups after 12pm will have an additional half day of daycare/dayboarding added.</p>
+                            <p>Boarding pick-ups before 12pm will have no daycare/dayboarding charges for the pick-up day.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col gap-3">
+                            <div class="text-2xl font-bold text-primary">Add On Options</div>
+                            <ul>
+                                <li>Locally Sourced Premium Dog Cookies</li>
+                                <li>Dog Yogurt</li>
+                                <li>Nail Trim and Dremel</li>
+                                <li>Go-Home Bath</li>
+                                <li>Teeth Brushing</li>
+                                <li>Brush Out</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+     <!-- Footer -->
+     <footer class="bg-primary text-white mt-10">
+        <div class="container mx-auto px-20 pt-20 pb-10">
+            <div class="flex flex-col sm:flex-row text-left lg:text-left">
+              <div class="w-full lg:w-6/12 px-4">
+                <h4 class="text-3xl">Bellevue Pet Adventures</h4>
+                <h5 class="text-xl">Boarding | Grooming | Daycare</h5>
+                <div class="mt-6 lg:mb-0 mb-6">
+                  <a href="https://www.facebook.com/crumcakesbakery/">
+                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white" type="button">
+                        <i class="fab fa-facebook-square mx-auto"></i>
+                      </button>
+                  </a>
+                  <a href="tel:402-850-5941" >
+                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white"  type="button">
+                        <i class="fa-solid fa-phone mx-auto"></i>
+                    </button>
+                  </a>
+                  <a href="mailto:crumcakesbakery@yahoo.com">
+                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-link hover:text-white" type="button">
+                        <i class="fa-solid fa-envelope mx-auto" ></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="flex items-top mb-6">
+                  <div class="w-full px-4">
+                    <span class="block uppercase text-blueGray-500 text-2xl font-semibold mb-2 underline">Navigation</span>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="text-white font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./index.html">Home</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link"
+                         href="./src/pages/products.html">About Us</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./src/pages/contact.html">Reservations</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./src/pages/contact.html">New Customers</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./src/pages/contact.html">Services</a>
+                      </li>
                     </ul>
-                    <u><h4>Pricing is based off size and coat quality of your dog</h4></u>
-                    <p>
-                        Pet Adventures grooming services will exclusively use <a href="https://www.tropiclean.com/">Tropiclean</a> products.  
-                        These soap-free, detergent-free shampoos and conditioners use oatmeal and coconut as natural cleaners, kava for detangling and papaya for color enhancing.  
-                        Pet's coats are left silky and shiny, without residue from harsh chemical cleansers.  
-                        Even Tropiclean's packaging is 100% biodegradable!
-                    </p>
-                     These products will also be available for retail sale at Bellevue Pet Adventures for those who wish to clean/groom their pet at home.
-                    Unfortunately, we do not groom cats at this time.
+                  </div>
+                  
                 </div>
+              </div>
+              
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.314262225837!2d-96.0898274!3d41.2663849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793f31b26c76cd9%3A0xdc4e73c7345c53c!2sCrum%20Cakes%20Bakery!5e1!3m2!1sen!2sus!4v1702427388612!5m2!1sen!2sus&z=15" class="w-80 h-40" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
-        </div>
-        <div class="Daycare service">
-            <h1>Daycare</h1>
-            <div class="info-container">
-                <div class="info">
-                    <p>
-                        Daycare is great for pups who need socialization or just need to have some fun outside of their home! 
-                        While at daycare, your dog will be able to play with other dogs, make new friends, and participate in fun activities such as tennis balls/pool parties/etc. 
-                        Our daycare attendants will help reinforce good behaviors and teach them how to play with others.
-                    </p>
-                    <span>Before scheduling daycare, make sure your dog has completed their temperament test and is up to date on all vaccines.</span>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+              <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-blueGray-500 font-semibold py-1">
+                  Copyright © Powered by <span id="get-current-year">2023</span>
+                  <a href="https://www.paleblackdotllc.com" class="text-blueGray-500 hover:text-link" 
+                  target="_blank"> Pale Black Dot 
                 </div>
-                <img src="/images/serena.jpg" alt="#">
+              </div>
             </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-div-container">
-            <div class="pages footer-div">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/pages/about.html">About Us</a></li>
-                    <li><a href="/pages/reservations.html">Reservations</a></li>
-                    <li><a href="/pages/services.html">Services</a></li>
-                    <li><a href="/pages/pricing.html">Pricing</a></li>
-                    <li><a href="/pages/newcustomer.html">New Customer</a></li>
-                    <li><a href="/pages/join.html">Join our Team</a></li>
-                </ul>
-            </div>
-            <div class="footer-div">
-                <ul>
-                    <li><i class="fa fa-home"></i>8705 S 9th St, Bellevue, NE 68147</li>
-                    <li><i class="fa fa-phone"></i><a href="tel:402-403-3923">(402) 403-3923</a></li>
-                    <li><i class="fa fa-envelope"></i>info@bellevuepetadventures.com</li>
-                    <li><i class="fa fa-globe"></i><a href="https://petadventure.gingrapp.com/front_end/login/email">Customer Portal</a></li>
-                </ul>
-            </div>
-            <div class="footer-div">
-                <ul>
-                    <li>Sunday: 4PM - 6PM</li>
-                    <li>Mon-Fri: 6AM - 6PM</li>
-                    <li>Saturday: 7AM - 4PM</li>
-                </ul>
-            </div>
-        </div>
+          </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 </html>
