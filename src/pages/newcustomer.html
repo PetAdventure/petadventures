@@ -6,24 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bellevue Pet Adventures</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../../dist/output.css">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="../../script.js"></script>
         <script src="https://use.fontawesome.com/6fbb82520b.js"></script>
-        <script src="../script.js"></script>
     </head>
 <body>
-    <nav class="navbar">
-        <a href="/"><img src="../images/navlogo.png" alt="Bellevue Pet Adventures"></a>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/pages/about.html">About Us</a></li>
-            <li><a href="/pages/reservations.html">Reservations</a></li>
-            <li><a href="/pages/services.html">Services</a></li>
-            <li><a href="/pages/pricing.html">Pricing</a></li>
-            <li><a href="/pages/newcustomer.html">New Customer</a></li>
-            <li><a href="/pages/join.html">Join our Team!</a></li>
+    <nav class="flex flex-row justify-between items-center px-10 py-5">
+        <div class="">
+            <a href="/"><img width="150" height="150" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+        </div>
+        <ul class="flex flex-row gap-20 text-lg px-10 font-bold">
+            <li><a class="font-Gabriela" href="/">Home</a></li>
+            <li><a class="font-Gabriela" href="./about.html">About Us</a></li>
+            <li><a class="font-Gabriela" href="./reservations.html">Reservations</a></li>
+            <li><a class="font-Gabriela" href="./services.html">Services</a></li>
+            <li><a class="font-Gabriela" href="./pricing.html">Pricing</a></li>
+            <li><a class="font-Gabriela" href="./newcustomer.html">New Customer</a></li>
+            <li><a class="font-Gabriela" href="./join.html">Join our Team!</a></li>
         </ul>
-        <h1>Bellevue Pet Adventures</h1>
-        <div id="hamburger-icon">
+        <div id="hamburger-icon" class="hidden">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -34,73 +39,134 @@
                 <li><a href="/pages/services.html">Services</a></li>
                 <li><a href="/pages/pricing.html">Pricing</a></li>
                 <li><a href="/pages/newcustomer.html">New Customer</a></li>
-                <li><a href="/pages/join.html">Join our team</a></li>
+                <li><a href="/pages/join.html">Join our team!</a></li>
             </ul>
         </div>
     </nav>
-    <div class="newcustomer-container">
-        <div class="newcust-welcome">
-            <h1>Welcome</h1>
-            <h3>Thank you for looking to Bellevue Pet Adventures for all your pup's needs.</h3>
-            <h4>Below you will find all that you need for you and your pup to get started.</h4>
-        </div>
-        <div class="needs-info-container">
-            <div class="needsinfo">
-                <img src="/images/profile.png" alt="Start a profile">
-                <h3>Create a profile</h3>
-                <p>A profile is required to set up appointments. </p>
-                <p>Please <a href="https://petadventure.gingrapp.com/front_end/login/email">click here</a> to create a profile.</p>
-                <p>(Feel free to upload a cute photo for your pup!)</p>
-            </div>
-            <div class="needsinfo">
-                <img src="/images/vaccines.png" alt="Vaccines">
-                <h3>Vaccines</h3>
-                <p>Certain vaccines are required. These include: </p>
-                <ul>
-                    <li><i class="fa fa-paw"></i>Rabies</li>
-                    <li><i class="fa fa-paw"></i>Distemper/Parvo</li>
-                    <li><i class="fa fa-paw"></i>Bordetella (every 6 months).</li>
-                </ul>
-                <p>Please email a copy or upload a copy to your <a href="https://petadventure.gingrapp.com/front_end/login/email">profile</a>.</p>
-            </div>
-            <div class="needsinfo">
-                <img src="/images/dog.png" alt="Temperament">
-                <h3>Meet and Greet</h3>
-                <p>Temperament tests will need to be scheduled and are FREE!</p>
-                <p>We have scheduled times for drop offs and we will need to hold on to your pup for 4-6hrs.</p>
-                <span>Meet and Greets will be required for daycare and boarding.</span>
+
+    <section>
+        <div class="relative h-[80vh]" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../public/images/newCustomer-background.jpg'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
+            <div class="absolute top-60 left-0 transform -translate-y-1/2 translate-x-20 text-left">
+                <span class="text-xl text-white">New Customers</span>
+                <h1 class="text-white text-4xl">Ready To Give Your Dog</h1>
+                <h2 class="text-accent text-2xl pt-3 pb-10">The Best Time Ever?</h2>
+                <button 
+                class="bg-primary text-center px-10 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
+                href="/pages/services.html">Our Services</button>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="footer-div-container">
-            <div class="pages footer-div">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/pages/about.html">About Us</a></li>
-                    <li><a href="/pages/reservations.html">Reservations</a></li>
-                    <li><a href="/pages/services.html">Services</a></li>
-                    <li><a href="/pages/pricing.html">Pricing</a></li>
-                    <li><a href="/pages/newcustomer.html">New Customer</a></li>
-                    <li><a href="/pages/join.html">Join our Team</a></li>
-                </ul>
+    </section>
+
+    <section class="bg-modal mx-20 px-20 py-10 transform -translate-y-10">
+        <div class="flex flex-row gap-10">
+            <div class="w-3/4">
+                <div class="text-primary text-4xl">Welcome!</div>
+                <div class="text-4xl">Please Review the Information Below</div>
+                <p class="pt-5 text-lg">Thank you for visiting Bellevue Pet Adventures! We are the premiere location in Bellevue, Nebraska for boarding, grooming and daycare for dogs! We absolutely love dogs and will pamper your sweet pup as if they were one of our own. Upon reviewing the requirements below, when you're ready, please click the button below to create your profile.</p>
+                <div class="mt-10">
+                    <a href="https://petadventure.gingrapp.com/front_end/login/email"
+                    class="bg-primary text-center px-10 py-5 rounded-xl text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
+                    href="/pages/services.html">Create Profile</a>
+                </div>
+                
             </div>
-            <div class="footer-div">
-                <ul>
-                    <li><i class="fa fa-home"></i>8705 S 9th St, Bellevue, NE 68147</li>
-                    <li><i class="fa fa-phone"></i><a href="tel:402-403-3923">(402) 403-3923</a></li>
-                    <li><i class="fa fa-envelope"></i>info@bellevuepetadventures.com</li>
-                    <li><i class="fa fa-globe"></i><a href="https://petadventure.gingrapp.com/front_end/login/email">Customer Portal</a></li>
-                </ul>
+            <div class="">
+                <img class="w-3/4 h-auto" src="../../public/images/new_cust.jpg" alt="Happy dog with hankercheif">
+            </div>    
+        </div>
+
+        <div class="flex flex-row justify-center items-center mx-auto pt-20">
+            <div class="flex flex-col gap-6 p-4">
+                <div><img width="75" height="75" src="../../public/images/about-grid-1.svg"></div>
+                <div class="text-2xl font-bold">Create a Profile</div>
+                <div class="font-light">A profile is required to set up appointemnts. Click the button above to create your profile. Feel free to upload a cute picture of your pup too!</div>
             </div>
-            <div class="footer-div">
-                <ul>
-                    <li>Sunday: 4PM - 6PM</li>
-                    <li>Mon-Fri: 6AM - 6PM</li>
-                    <li>Saturday: 7AM - 4PM</li>
-                </ul>
+            <div class="flex flex-col gap-6 p-4"> 
+                <div><img width="75" height="75" src="../../public/images/about-grid-2.svg"></div>
+                <div class="text-2xl font-bold">Vaccines</div>
+                <div class="font-light">Certain vaccines are required. These include: Rabies, Distemper/Parvo, and Bordetella (every 6 months). Please email or upload to your profile a copy of your vaccination records.</div>
+            </div>
+            <div class="flex flex-col gap-6 p-4">
+                <div><img width="75" height="75" src="../../public/images/about-grid-3.svg"></div>
+                <div class="text-2xl font-bold">Meet and Greet</div>
+                <div class="font-light">Temperament tests will need to be scheduled and are free! We have scheduled drop off times and we will need to hold onto your pup for 4 - 6 hours.</div>
             </div>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white mt-10">
+        <div class="container mx-auto px-20 pt-20 pb-10">
+            <div class="flex flex-col sm:flex-row text-left lg:text-left">
+              <div class="w-full lg:w-6/12 px-4">
+                <h4 class="text-3xl">Bellevue Pet Adventures</h4>
+                <h5 class="text-xl">Boarding | Grooming | Daycare</h5>
+                <div class="mt-6 lg:mb-0 mb-6">
+                  <a href="https://www.facebook.com/crumcakesbakery/">
+                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white" type="button">
+                        <i class="fab fa-facebook-square mx-auto"></i>
+                      </button>
+                  </a>
+                  <a href="tel:402-850-5941" >
+                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white"  type="button">
+                        <i class="fa-solid fa-phone mx-auto"></i>
+                    </button>
+                  </a>
+                  <a href="mailto:crumcakesbakery@yahoo.com">
+                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-link hover:text-white" type="button">
+                        <i class="fa-solid fa-envelope mx-auto" ></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="flex items-top mb-6">
+                  <div class="w-full px-4">
+                    <span class="block uppercase text-blueGray-500 text-2xl font-semibold mb-2 underline">Navigation</span>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="text-white font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./index.html">Home</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link"
+                         href="./src/pages/products.html">About Us</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./src/pages/contact.html">Reservations</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./src/pages/contact.html">New Customers</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-xl max-w-fit transition-all duration-200 hover:text-link" 
+                        href="./src/pages/contact.html">Services</a>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.314262225837!2d-96.0898274!3d41.2663849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793f31b26c76cd9%3A0xdc4e73c7345c53c!2sCrum%20Cakes%20Bakery!5e1!3m2!1sen!2sus!4v1702427388612!5m2!1sen!2sus&z=15" class="w-80 h-40" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+              <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-blueGray-500 font-semibold py-1">
+                  Copyright © Powered by <span id="get-current-year">2023</span>
+                  <a href="https://www.paleblackdotllc.com" class="text-blueGray-500 hover:text-link" 
+                  target="_blank"> Pale Black Dot 
+                </div>
+              </div>
+            </div>
+          </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 </html>
