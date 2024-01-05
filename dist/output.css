@@ -602,6 +602,10 @@ video {
   top: 15rem;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
