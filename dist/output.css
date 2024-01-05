@@ -602,10 +602,6 @@ video {
   top: 15rem;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -651,6 +647,10 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.ml-40 {
+  margin-left: 10rem;
 }
 
 .block {
@@ -993,6 +993,10 @@ video {
   font-size: 3.158rem;
 }
 
+.text-5xl {
+  font-size: 4.210rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1004,10 +1008,6 @@ video {
 
 .text-xl {
   font-size: 1.333rem;
-}
-
-.text-5xl {
-  font-size: 4.210rem;
 }
 
 .font-bold {
