@@ -18,11 +18,15 @@
         <div class="">
             <a href="/"><img width="150" height="150" src="./public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
         </div>
-        <ul class="flex flex-row gap-20 text-lg px-10 font-bold">
-            <li><a class="font-Gabriela" href="/">Home</a></li>
-            <li><a class="font-Gabriela" href="src/pages/about.html">About Us</a></li>
-            <li><a class="font-Gabriela" href="src/pages/services.html">Services</a></li>
-            <li><a class="font-Gabriela" href="src/pages/newcustomer.html">New Customer</a></li>
+        <ul class="flex flex-row gap-20 text-xl px-10 font-bold items-center">
+            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="/">Home</a></li>
+            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="src/pages/about.html">About Us</a></li>
+            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="src/pages/services.html">Services</a></li>
+            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="src/pages/newcustomer.html">New Customer</a></li>
         </ul>
         <div id="hamburger-icon" class="hidden">
             <div class="bar1"></div>
@@ -39,8 +43,8 @@
     <section>
         <div class="relative h-[70vh]" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./public/images/newLanding.png'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
             <div class="absolute top-48 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center">
-                <h1 class="text-white text-4xl">Bellevue Pet Adventures</h1>
-                <h2 class="text-accent text-2xl pt-3 pb-10">Friendly, professional kennel and grooming services</h2>
+                <h1 class="text-white text-5xl font-bold">Bellevue Pet Adventures</h1>
+                <h2 class="text-accent text-2xl pt-3 pb-10 font-bold">Friendly, professional kennel and grooming services</h2>
                 <button 
                 class="bg-primary text-center px-20 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
                 href="/pages/services.html">Our Services</button>
@@ -51,31 +55,31 @@
     <section class="px-40 pt-20 pb-40">
         <div class="text-center">
             <div class="text-3xl text-primary font-bold">We Keep Your Pets Safe and Happy</div>
-            <div class="w-2/3 mx-auto text-xl">We offer nothing but the best for your furry loved ones. We offer spacious kennels, and daily individual time in our large play yard.</div>
+            <div class="w-2/3 mx-auto text-xl pt-3">We offer nothing but the best for your furry loved ones. We offer spacious kennels, and daily individual time in our large play yard.</div>
         </div>
 
         <div class="grid grid-cols-3 grid-rows-2 pt-20">
             <div><img src="./public/images/grid-1.jpg" alt="Dog with halloween hankerchief"></div>
             <div class="flex flex-col items-center justify-center px-5 gap-4">
-                <div><img src="./public/images/newcustomer.png" alt="new customer"></div>
-                <div class="text-primary">Grooming</div>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <button class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Learn More</button>
+                <div><img width="158" height="158" src="./public/images/landing-grid-2.jpg" alt="new customer"></div>
+                <div class="text-primary text-2xl font-bold">Grooming</div>
+                <p class="text-center">We get your dogs looking their best. A well-groomed dog is a happy dog.</p>
+                <a href="./src/pages/services.html" class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Learn More</a>
             </div>
             <div><img src="./public/images/grid-2.jpg" alt=""></div>
 
             <div class="flex flex-col items-center justify-center px-5 gap-4">
-                <div><img src="./public/images/newcustomer.png" alt="new customer"></div>
-                <div class="text-primary">Grooming</div>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <button class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Learn More</button>
+                <div><img width="158" height="158" src="./public/images/landing-grid-1.jpg" alt="new customer"></div>
+                <div class="text-primary text-2xl font-bold">Boarding</div>
+                <p class="text-center">Going on vacation? Or perhaps your dog needs one? We got you covered.</p>
+                <a href="./src/pages/services.html" class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Learn More</a>
             </div>
             <div><img src="./public/images/grid-3.jpg" alt=""></div>
             <div class="flex flex-col items-center justify-center px-5 gap-4">
-                <div><img src="./public/images/newcustomer.png" alt="new customer"></div>
-                <div class="text-primary">Grooming</div>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <button class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Learn More</button>
+                <div><img width="158" height="158" src="./public/images/landing-grid-3.svg" alt="new customer"></div>
+                <div class="text-primary text-2xl font-bold">Daycare</div>
+                <p class="text-center">Give your dog the give of making new doggy friends.</p>
+                <a href="./src/pages/services.html" class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Learn More</a>
             </div>
         </div>
         
@@ -88,7 +92,9 @@
             <p class="text-white text-lg w-1/2 mt-5">Looking to find a safe and fun spot for your dog to stay? Look no further. We have everything to keep your dog happy and healthy.</p>
             <p class="text-lg w-1/2 pt-5 text-white">New Customer? Check out our requirements by clicking the button below.</p>
 
-            <button class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black mt-3">New Customers</button>
+            <a href="./src/pages/newcustomer.html">
+              <button  class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black mt-3">New Customers</button>
+            </a>
         </div>
     </section>
 
@@ -100,17 +106,17 @@
                 <h4 class="text-3xl">Bellevue Pet Adventures</h4>
                 <h5 class="text-xl">Boarding | Grooming | Daycare</h5>
                 <div class="mt-6 lg:mb-0 mb-6">
-                  <a href="https://www.facebook.com/crumcakesbakery/">
+                  <a href="https://www.facebook.com/BellevuePetAdventures/">
                     <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white" type="button">
                         <i class="fab fa-facebook-square mx-auto"></i>
                       </button>
                   </a>
-                  <a href="tel:402-850-5941" >
+                  <a href="tel:4024033923" >
                     <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white"  type="button">
                         <i class="fa-solid fa-phone mx-auto"></i>
                     </button>
                   </a>
-                  <a href="mailto:crumcakesbakery@yahoo.com">
+                  <a href="mailto:info@bellevuepetadventures.com">
                     <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-link hover:text-white" type="button">
                         <i class="fa-solid fa-envelope mx-auto" ></i>
                     </button>
