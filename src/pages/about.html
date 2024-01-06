@@ -15,7 +15,7 @@
         <script src="https://use.fontawesome.com/6fbb82520b.js"></script>
     </head>
 <body class="bg-background">
-    <nav class="flex flex-row justify-between items-center px-10 py-5">
+    <nav class="hidden sm:flex flex-row justify-between items-center px-10 py-5">
         <div class="">
             <a href="/"><img width="150" height="150" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
         </div>
@@ -29,19 +29,24 @@
             <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
                 before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./newcustomer.html">New Customer</a></li>
         </ul>
-        <div id="hamburger-icon" class="hidden">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/pages/about.html">About Us</a></li>
-                <li><a href="/pages/services.html">Services</a></li>
-                <li><a href="/pages/newcustomer.html">New Customer</a></li>
-            </ul>
-        </div>
+        
     </nav>
-
+    <div class="flex sm:hidden flex-row justify-between items-center gap-1 p-5">
+        <div>
+          <a href="/"><img width="75" height="75" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+        </div>
+        <div class="flex flex-col gap-1">
+          <div class="h-[2px] w-[30px] bg-black"></div>
+          <div class="h-[2px] w-[30px] bg-black"></div>
+          <div class="h-[2px] w-[30px] bg-black"></div>
+        </div>
+        <ul class="hidden">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li><a href="/pages/newcustomer.html">New Customer</a></li>
+        </ul>
+    </div>
     <section>
         <div class="relative h-[40vh] sm:h-[80vh]" style="background:  url('../../public/images/background_about_us.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="absolute top-40 sm:top-60 left-0 transform -translate-y-1/2 translate-x-5 sm:translate-x-28 inline-block">

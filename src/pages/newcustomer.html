@@ -15,47 +15,50 @@
         <script src="https://use.fontawesome.com/6fbb82520b.js"></script>
     </head>
 <body>
-    <nav class="flex flex-row justify-between items-center px-10 py-5">
-        <div class="">
-            <a href="/"><img width="150" height="150" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+  <nav class="hidden sm:flex flex-row justify-between items-center px-10 py-5">
+    <div class="">
+        <a href="/"><img width="150" height="150" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+    </div>
+    <ul class="flex flex-row gap-20 text-xl px-10 font-bold items-center">
+        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+            before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="/">Home</a></li>
+        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+            before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./about.html">About Us</a></li>
+        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+            before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./services.html">Services</a></li>
+        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+            before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./newcustomer.html">New Customer</a></li>
+    </ul>
+    
+</nav>
+<div class="flex sm:hidden flex-row justify-between items-center gap-1 p-5">
+    <div>
+      <a href="/"><img width="75" height="75" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+    </div>
+    <div class="flex flex-col gap-1">
+      <div class="h-[2px] w-[30px] bg-black"></div>
+      <div class="h-[2px] w-[30px] bg-black"></div>
+      <div class="h-[2px] w-[30px] bg-black"></div>
+    </div>
+    <ul class="hidden">
+        <li><a href="/">Home</a></li>
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/services.html">Services</a></li>
+        <li><a href="/pages/newcustomer.html">New Customer</a></li>
+    </ul>
+</div>
+<section>
+    <div class="relative h-[40vh] sm:h-[80vh]" style="background:  url('../../public/images/newCustomer-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute top-40 sm:top-60 left-0 transform -translate-y-1/2 translate-x-5 sm:translate-x-28 inline-block">
+            <span class="text-xl sm:text-2xl text-white">New Customer</span>
+            <h1 class="text-white text-3xl sm:text-5xl">Ready to Give Your Dog</h1>
+            <h2 class="text-accent text-xl sm:text-2xl pt-3 pb-10">The Best Time Ever?</h2>
+            <button 
+            class="bg-primary text-center px-10 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
+            href="/pages/services.html">Our Services</button>
         </div>
-        <ul class="flex flex-row gap-20 text-xl px-10 font-bold items-center">
-            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
-              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="/">Home</a></li>
-            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
-              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./about.html">About Us</a></li>
-            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
-              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./services.html">Services</a></li>
-            <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
-              before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./newcustomer.html">New Customer</a></li>
-        </ul>
-        <div id="hamburger-icon" class="hidden">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/pages/about.html">About Us</a></li>
-                <li><a href="/pages/services.html">Services</a></li>
-                <li><a href="/pages/newcustomer.html">New Customer</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section>
-        <div class="relative h-[40vh] sm:h-[80vh]" style="background: url('../../public/images/newCustomer-background.jpg'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
-            <div class="absolute top-44 sm:top-60 left-0 transform -translate-y-1/2 translate-x-5 sm:translate-x-28 inline-block">
-                <span class="text-xl sm:text-2xl text-white">New Customers</span>
-                <h1 class="text-white text-3xl sm:text-5xl">Ready To Give Your Dog</h1>
-                <h2 class="text-accent text-xl sm:text-2xl pt-3 pb-10">The Best Time Ever?</h2>
-                <button 
-                class="bg-primary text-center px-10 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
-                href="/pages/services.html">Our Services</button>
-            </div>
-        </div>
-        
-      </div>
-    </section>
+    </div>
+</section>
 
     <section class="bg-modal mx-5 px-5 sm:mx-20 sm:px-20 py-10 transform -translate-y-10">
         <div class="flex flex-col sm:flex-row gap-10">
