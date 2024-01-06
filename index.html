@@ -14,7 +14,7 @@
     <script src="https://use.fontawesome.com/6fbb82520b.js"></script>
 </head>
 <body class="bg-background">
-    <nav class="flex flex-row justify-between items-center px-10 py-5">
+    <nav class="hidden sm:flex flex-row justify-between items-center px-10 py-5">
         <div class="">
             <a href="/"><img width="150" height="150" src="./public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
         </div>
@@ -28,54 +28,60 @@
             <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
               before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="src/pages/newcustomer.html">New Customer</a></li>
         </ul>
-        <div id="hamburger-icon" class="hidden">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/pages/about.html">About Us</a></li>
-                <li><a href="/pages/services.html">Services</a></li>
-                <li><a href="/pages/newcustomer.html">New Customer</a></li>
-            </ul>
-        </div>
     </nav>
-    <section class="h-40 hidden sm:block">
-        <div class="relative h-full hidden sm:block" style="background: url('./public/images/newLanding.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+    <div class="flex sm:hidden flex-row justify-between items-center gap-1 p-5">
+      <div>
+        <a href="/"><img width="75" height="75" src="./public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+      </div>
+      <div class="flex flex-col gap-1">
+        <div class="h-[2px] w-[30px] bg-black"></div>
+        <div class="h-[2px] w-[30px] bg-black"></div>
+        <div class="h-[2px] w-[30px] bg-black"></div>
+      </div>
+      <ul class="hidden">
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/about.html">About Us</a></li>
+          <li><a href="/pages/services.html">Services</a></li>
+          <li><a href="/pages/newcustomer.html">New Customer</a></li>
+      </ul>
+  </div>
+    <section class="w-full hidden sm:block">
+        <div class="relative h-[70vh] hidden sm:block" style="background: url('./public/images/newLanding.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="absolute top-48 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center">
                 <h1 class="text-white text-5xl font-bold">Bellevue Pet Adventures</h1>
                 <h2 class="text-accent text-2xl pt-3 pb-10 font-bold">Friendly, professional kennel and grooming services</h2>
-                <button 
+                <a 
                 class="bg-primary text-center px-20 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
-                href="/pages/services.html">Our Services</button>
+                href="./src/pages/services.html">Our Services</a>
             </div>
         </div>
         
       </div>
     </section>
 
-    <section class="h-40">
-      <div class="h-full block sm:hidden" style="background: url('./public/images/newLanding.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-         
+    <section class="w-full block sm:hidden">
+      <div class="h-40" style="background: url('./public/images/newLanding.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+          
       </div>
-      <div class="text-center">
+      <div class=" text-center mt-10">
         <h1 class="text-black text-5xl font-bold">Bellevue Pet Adventures</h1>
         <h2 class="text-accent text-2xl pt-3 pb-10 font-bold">Friendly, professional kennel and grooming services</h2>
-        <button 
+        <a 
         class="bg-primary text-center px-20 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
-        href="/pages/services.html">Our Services</button>
+        href="./src/pages/services.html">Our Services</a>
     </div>
     </div>
   </section>
+    
    
 
-    <section class="px-40 pt-20 pb-40">
+    <section class="sm:px-40 pt-20 pb-40">
         <div class="text-center">
             <div class="text-3xl text-primary font-bold">We Keep Your Pets Safe and Happy</div>
             <div class="w-2/3 mx-auto text-xl pt-3">We offer nothing but the best for your furry loved ones. We offer spacious kennels, and daily individual time in our large play yard.</div>
         </div>
 
-        <div class="grid grid-cols-3 grid-rows-2 pt-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 pt-20 px-10 gap-5">
             <div><img src="./public/images/grid-1.jpg" alt="Dog with halloween hankerchief"></div>
             <div class="flex flex-col items-center justify-center px-5 gap-4">
                 <div><img width="158" height="158" src="./public/images/landing-grid-2.jpg" alt="new customer"></div>
@@ -102,15 +108,15 @@
         
     </section>
 
-    <section class="relative h-[80vh]" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./public/images/about-background.jpg'); background-size: 100%; background-position: top; background-repeat: no-repeat;">
-        <div class="absolute top-60 left-0 transform -translate-y-1/2 translate-x-28 inline-block" >
-            <div class="text-4xl text-primary font-bold ">Need A Vacation?</div>
-            <div class="text-4xl text-white font-bold">Give Your Dog One Too.</div>
-            <p class="text-white text-lg w-1/2 mt-5">Looking to find a safe and fun spot for your dog to stay? Look no further. We have everything to keep your dog happy and healthy.</p>
-            <p class="text-lg w-1/2 pt-5 text-white">New Customer? Check out our requirements by clicking the button below.</p>
+    <section class="relative h-[40vh] sm:h-[80vh]" style="background: url('./public/images/about-background.jpg'); background-size: 100%; background-position: top; background-repeat: no-repeat;">
+        <div class="absolute top-40 sm:top-60 left-0 transform -translate-y-1/2 translate-x-5 sm:translate-x-28 inline-block" >
+            <div class="text-3xl sm:text-4xl text-primary font-bold ">Need A Vacation?</div>
+            <div class="text-3xl sm:text-4xl text-white font-bold">Give Your Dog One Too.</div>
+            <p class="text-white text-lg w-1/2 mt-5 hidden sm:block">Looking to find a safe and fun spot for your dog to stay? Look no further. We have everything to keep your dog happy and healthy.</p>
+            <p class="text-lg w-1/2 pt-5 text-white hidden">New Customer? Check out our requirements by clicking the button below.</p>
 
             <a href="./src/pages/newcustomer.html">
-              <button  class="bg-primary text-center px-7 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black mt-3">New Customers</button>
+              <button  class="bg-primary text-center px-5 sm:px-7 py-3 sm:py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black mt-3">New Customers</button>
             </a>
         </div>
     </section>
@@ -167,7 +173,7 @@
                 </div>
               </div>
               
-              <div>
+              <div class="flex flex-row ">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.2782629629273!2d-95.93022982439007!3d41.172097609322336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x879388f6fdb08ebb%3A0x4cf5121709a6d2e4!2sBellevue%20Pet%20Adventures!5e0!3m2!1sen!2sus!4v1704427857018!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
