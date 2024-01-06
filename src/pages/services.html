@@ -49,11 +49,11 @@
         </div>
     </nav>
     <section>
-        <div class="relative h-[80vh]" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../public/images/services-background.jpg'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
-            <div class="absolute top-60 left-0 transform -translate-y-1/2 translate-x-28 text-left">
-                <span class="text-2xl text-white">Services</span>
-                <h1 class="text-white text-5xl">Happy To Welcome You</h1>
-                <h2 class="text-accent text-2xl pt-3 pb-10">To Our Circle Of Friends</h2>
+        <div class="relative h-[40vh] sm:h-[80vh]" style="background:  url('../../public/images/services-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="absolute top-40 sm:top-60 left-0 transform -translate-y-1/2 translate-x-5 sm:translate-x-28 inline-block">
+                <span class="text-xl sm:text-2xl text-white">Services</span>
+                <h1 class="text-white text-3xl sm:text-5xl">Happy to Welcome You</h1>
+                <h2 class="text-accent text-xl sm:text-2xl pt-3 pb-10">To Our Circle of Friends</h2>
                 <button 
                 class="bg-primary text-center px-10 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
                 href="/pages/services.html">Our Services</button>
@@ -61,9 +61,9 @@
         </div>
     </section>
 
-    <section class="bg-modal mx-20 px-20 pt-10 transform -translate-y-10">
-        <div class="flex flex-row gap-10">
-            <div class="w-3/4">
+    <section class="bg-modal mx-2 sm:mx-20 px-5 sm:px-20 py-10 transform -translate-y-10">
+        <div class="flex flex-col sm:flex-row gap-10">
+            <div class="w-full sm:w-3/4 sm:text-left">
                 <div class="text-primary text-4xl">What We Offer</div>
                 <div class="text-4xl">Our Services</div>
                 <p class="pt-5 text-lg">Bellevue Pet Adventures is a locally owned and operated dog grooming, boarding, and daycare facility. We strive to provide the best in care, comfort and fun for your furry loved ones.</p>
@@ -97,15 +97,15 @@
             </div>    
         </div>
 
-        <div class="mt-20">
+        <div class="mt-20 w-full">
             <div class="flex flex-start gap-5  bg-modal ">
-                <button id="service-button" class="text-lg p-10 selected">Boarding</button>
-                <button id="service-button" class="text-lg p-10">Grooming</button>
-                <button id="service-button" class="text-lg p-10">Daycare</button>
+                <button id="service-button" class="text-lg p-3 sm:p-10 selected">Boarding</button>
+                <button id="service-button" class="text-lg p-3 sm:p-10">Grooming</button>
+                <button id="service-button" class="text-lg p-3 sm:p-10">Daycare</button>
             </div>
 
-            <div id="service-info" class="">
-                <div id="service" class="bg-background flex flex-row gap-10 p-10 Boarding">
+            <div id="service-info" class="w-full">
+                <div id="service" class="bg-background flex flex-col sm:flex-row gap-10 p-10 Boarding">
                     <div class="flex flex-col gap-5">
                         <div class="text-2xl font-bold text-primary">All Boarding Suites</div>
                         <div class="flex flex-row justify-between">
@@ -138,7 +138,7 @@
                     </div>
                 </div>
 
-                <div id="service" class="bg-background flex flex-row gap-10 p-10 hidden Grooming">
+                <div id="service" class="bg-background flex flex-col sm:flex-row gap-10 p-10 hidden Grooming">
                     <div class="flex flex-col gap-5 w-full">
                         <div class="text-2xl font-bold text-primary">Grooming</div>
                         <div class="flex flex-row justify-between">
@@ -170,12 +170,12 @@
                     </div>
                 </div>
 
-                <div id="service" class="bg-background flex flex-row gap-10 p-10 hidden Daycare">
+                <div id="service" class="bg-background flex flex-col sm:flex-row gap-10 p-10 hidden Daycare">
                     <div class="flex flex-col gap-5 w-1/2">
                         <div class="text-2xl font-bold text-primary">Doggy Daycare</div>
-                        <div class="flex flex-row gap-10">
-                            <button class="">Half-Day</button>
-                            <button class="">Full-Day</button>
+                        <div class="flex flex-row gap-10 w-60">
+                            <button class="w-full">Half-Day</button>
+                            <button class="w-full">Full-Day</button>
                         </div>
                         <div id="half-day" class="hidden">
                             <div class="text-2xl text-primary">Half Day</div>
@@ -213,7 +213,7 @@
                             </div>
                         </div>
 
-                        <div id="whole-day">
+                        <div id="whole-day" class="w-72">
                             <div class="text-2xl text-primary">Whole Day</div>
                             <div class="flex flex-row justify-between items-center">
                                 <div class="text-lg text-black">One Day</div>
@@ -225,7 +225,7 @@
                             </div>
                             <div class="flex flex-row justify-between items-center pt-2">
                                 <div class="text-lg text-black">10 Days</div>
-                                <div class="flex-1 border-b-2 border-dotted border-black w-60"></div>
+                                <div class="flex-1 border-b-2 border-dotted border-black"></div>
                                 <div class="flex flex-col">
                                     <span>$23.50/day</span>
                                     <span>$235/Total</span>
@@ -319,7 +319,7 @@
                 </div>
               </div>
               
-              <div>
+              <div class="flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.2782629629273!2d-95.93022982439007!3d41.172097609322336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x879388f6fdb08ebb%3A0x4cf5121709a6d2e4!2sBellevue%20Pet%20Adventures!5e0!3m2!1sen!2sus!4v1704427857018!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
