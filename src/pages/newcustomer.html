@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bellevue Pet Adventures</title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-        <link rel="stylesheet" href="../../dist/output.css">
-        <link href="/dist/output.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="../../script.js"></script>
-        <script src="https://use.fontawesome.com/6fbb82520b.js"></script>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bellevue Pet Adventures</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+      <link rel="stylesheet" href="../../dist/output.css">
+      <link href="/dist/output.css" rel="stylesheet">
+      <meta name="description" content="Learn more about Bellevue Pet Adventures in Bellevue, Nebraska: our services, who we are, and where we are.">
+
+      <meta name="description" content="Requirements for new customers to bring their dogs to Bellevue Pet Adventures">
+
     </head>
-<body>
-  <nav class="hidden sm:flex flex-row justify-between items-center px-10 py-5">
-    <div class="">
-        <a href="/"><img width="150" height="150" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+<body class="bg-background">
+  <section class="bg-primary p-5">
+    <div class="flex flex-row justify-center text-white gap-20 text-xl">
+      <div>Need to make an appointment? <a aria-label="Link to customer portal" class="text-accent font-bold hover:underline hover:cursor-pointer" href="https://petadventure.gingrapp.com/front_end/login/email">Click here!</a></div>
+      <div class="hidden md:flex flex-row gap-5 items-center">Phone Number:<a aria-label="Phone Number" class="hover:underline hover:text-accent" href="tel:4024033923">402-403-3923</a></div>
     </div>
-    <ul class="flex flex-row gap-20 text-xl px-10 font-bold items-center">
-        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+  </section>
+  <nav class="hidden md:flex flex-row justify-between items-center px-10 py-5">
+    <div class="">
+        <a href="/"><img width="150" height="150" src="../../public/images/logo.avif" alt="Bellevue Pet Adventures"></a>
+    </div>
+    <ul class="flex flex-row gap-10 text-xl px-10 font-bold items-center">
+        <li><a class="relative before:transition-all before:duration-200 hover:cursor-pointer
             before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="/">Home</a></li>
-        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+        <li><a class="relative before:transition-all before:duration-200 hover:cursor-pointer
             before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./about.html">About Us</a></li>
-        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+        <li><a class="relative before:transition-all before:duration-200 hover:cursor-pointer
             before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./services.html">Services</a></li>
-        <li><a class="font-Gabriela relative before:transition-all before:duration-200 hover:cursor-pointer
+        <li><a class="relative before:transition-all before:duration-200 hover:cursor-pointer
             before:absolute before:h-[3px] before:w-0 before:bg-accent before:hover:w-full before:top-full" href="./newcustomer.html">New Customer</a></li>
     </ul>
     
 </nav>
-<div class="flex sm:hidden flex-row justify-between items-center gap-1 p-5">
-    <div>
-      <a href="/"><img width="75" height="75" src="../../public/images/navlogo.png" alt="Bellevue Pet Adventures"></a>
+<nav class="flex sm:flex md:hidden flex-row justify-between items-center px-10 py-7">
+    <div><a href="/"><img width="75" height="75" src="../../public/images/logo.avif" alt="Bellevue Pet Adventures"></a></div>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-accent " aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </nav>
+  <div class="absolute z-50 top-20 hidden w-full md:w-auto" id="navbar-default">
+      <ul class="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100  bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="../../index.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="./about.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About</a>
+        </li>
+        <li>
+          <a href="./services.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Services</a>
+          
+        </li>
+        <li>
+          <a href="./newcustomer.html" class="block py-2 px-3 text-white bg-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">New Customer</a>
+        </li>
+      </ul>
     </div>
-    <div class="flex flex-col gap-1">
-      <div class="h-[2px] w-[30px] bg-black"></div>
-      <div class="h-[2px] w-[30px] bg-black"></div>
-      <div class="h-[2px] w-[30px] bg-black"></div>
-    </div>
-    <ul class="hidden">
-        <li><a href="/">Home</a></li>
-        <li><a href="/pages/about.html">About Us</a></li>
-        <li><a href="/pages/services.html">Services</a></li>
-        <li><a href="/pages/newcustomer.html">New Customer</a></li>
-    </ul>
-</div>
 <section>
-    <div class="relative h-[40vh] sm:h-[80vh]" style="background:  url('../../public/images/newCustomer-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="hidden sm:block relative h-[40vh] sm:h-[80vh]" style="background:  url('../../public/images/4.avif'); background-size: cover;  background-repeat: no-repeat;">
         <div class="absolute top-40 sm:top-60 left-0 transform -translate-y-1/2 translate-x-5 sm:translate-x-28 inline-block">
-            <span class="text-xl sm:text-2xl text-white">New Customer</span>
-            <h1 class="text-white text-3xl sm:text-5xl">Ready to Give Your Dog</h1>
-            <h2 class="text-accent text-xl sm:text-2xl pt-3 pb-10">The Best Time Ever?</h2>
-            <button 
-            class="bg-primary text-center px-10 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black" 
-            href="/pages/services.html">Our Services</button>
+            <span class="text-xl sm:text-2xl text-accent">New Customer</span>
+            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl">Ready to Give Your Dog</h1>
+            <h2 class="text-white text-xl sm:text-2xl pt-3 pb-10">The Best Time Ever?</h2>
+            <a class="hidden sm:block" href="./services.html">
+              <button class="bg-primary text-center px-20 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Our Services</button> 
+            </a>
         </div>
     </div>
+    <div class="block sm:hidden relative h-[40vh] sm:h-[80vh]" style="background:  url('../../public/images/4.avif'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="absolute top-40 sm:top-60 left-0 transform -translate-y-1/2 translate-x-5 sm:translate-x-28 inline-block">
+          <span class="text-xl sm:text-2xl text-accent">New Customer</span>
+          <h1 class="text-white text-3xl sm:text-5xl">Ready to Give Your Dog</h1>
+          <h2 class="text-accent text-xl sm:text-2xl pt-3 pb-10">The Best Time Ever?</h2>
+          <a class="hidden sm:block" href="./services.html">
+            <button class="bg-primary text-center px-20 py-5 rounded-xl mx-auto text-white font-bold text-xl transition-all duration-300 hover:bg-secondary hover:text-black">Our Services</button> 
+          </a>
+      </div>
+  </div>
 </section>
 
-    <section class="bg-modal mx-5 px-5 sm:mx-20 sm:px-20 py-10 transform -translate-y-10">
-        <div class="flex flex-col sm:flex-row gap-10">
+    <section class="bg-modal mx-5 px-5 sm:mx-20 sm:px-20 py-10 transform -translate-y-5 sm:-translate-y-10">
+        <div class="flex flex-col lg:flex-row gap-10">
             <div class="w-full sm:w-3/4 sm:text-left">
-                <div class="text-primary text-4xl">Welcome!</div>
-                <div class="text-4xl">Please Review the Information Below</div>
+                <div class="text-primary text-3xl">Welcome!</div>
+                <div class="text-3xl">Please Review the Information Below</div>
                 <p class="pt-5 text-lg">Thank you for visiting Bellevue Pet Adventures! We are the premiere location in Bellevue, Nebraska for boarding, grooming and daycare for dogs! We absolutely love dogs and will pamper your sweet pup as if they were one of our own. Upon reviewing the requirements below, when you're ready, please click the button below to create your profile.</p>
                 <div class="mt-10">
                     <a href="https://petadventure.gingrapp.com/front_end/login/email"
@@ -74,23 +99,24 @@
                 
             </div>
             <div class="">
-                <img class="w-3/4 h-auto" src="../../public/images/new_cust.jpg" alt="Happy dog with hankercheif">
+                <img class="w-3/4 h-auto" src="../../public/images/new_cust.avif" alt="Happy dog with hankercheif">
             </div>    
         </div>
 
-        <div class="flex flex-col sm:flex-row justify-center items-center mx-auto pt-20">
+        <div class="flex flex-col lg:flex-row justify-center items-center mx-auto pt-20">
             <div class="flex flex-col gap-6 p-4">
-                <div><img width="75" height="75" src="../../public/images/newcust-info-1.svg"></div>
+                <div><img width="75" height="75" src="../../public/images/newcust-info-1.svg" 
+                  alt="Dog and cat icon looking to the right"></div>
                 <div class="text-2xl font-bold">Create a Profile</div>
                 <div class="font-light">A profile is required to set up appointemnts. Click the button above to create your profile. Feel free to upload a cute picture of your pup too!</div>
             </div>
             <div class="flex flex-col gap-6 p-4"> 
-                <div><img width="75" height="75" src="../../public/images/newcust-info-2.svg"></div>
+                <div><img width="75" height="75" src="../../public/images/newcust-info-2.svg" alt="Dog paw mark in a circle topped with a star"></div>
                 <div class="text-2xl font-bold">Vaccines</div>
                 <div class="font-light">Certain vaccines are required. These include: Rabies, Distemper/Parvo, and Bordetella (every 6 months). Please email or upload to your profile a copy of your vaccination records.</div>
             </div>
             <div class="flex flex-col gap-6 p-4">
-                <div><img width="75" height="75" src="../../public/images/newcust-info-3.svg"></div>
+                <div><img width="75" height="75" src="../../public/images/newcust-info-3.svg" alt="Dog with a bone in it's mouth and paw marks around it's head and a star on top"></div>
                 <div class="text-2xl font-bold">Meet and Greet</div>
                 <div class="font-light">Temperament tests will need to be scheduled and are free! We have scheduled drop off times and we will need to hold onto your pup for 4 - 6 hours.</div>
             </div>
@@ -99,24 +125,24 @@
 
     <!-- Footer -->
     <footer class="bg-primary text-white mt-10">
-        <div class="container mx-auto px-20 pt-20 pb-10">
-            <div class="flex flex-col sm:flex-row text-left lg:text-left">
+      <div class="container px-10 sm:px-20 pt-20 pb-10">
+        <div class="flex flex-col lg:flex-row justify-center text-left">
               <div class="w-full lg:w-6/12 px-4">
-                <h4 class="text-3xl">Bellevue Pet Adventures</h4>
-                <h5 class="text-xl">Boarding | Grooming | Daycare</h5>
+                <div class="text-3xl">Bellevue Pet Adventures</div>
+                <div class="text-xl">Boarding | Grooming | Daycare</div>
                 <div class="mt-6 lg:mb-0 mb-6">
-                  <a href="https://www.facebook.com/BellevuePetAdventures/">
-                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white" type="button">
-                        <i class="fab fa-facebook-square mx-auto"></i>
+                  <a aria-label="Visit our facebook" href="https://www.facebook.com/BellevuePetAdventures/">
+                    <button aria-label="Facebook of Bellevue Pet Adventures" class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white" type="button">
+                        <i class="fab fa-facebook mx-auto"></i>
                       </button>
                   </a>
-                  <a href="tel:4024033923" >
-                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white"  type="button">
+                  <a aria-label="Call Us" href="tel:4024033923" >
+                    <button aria-label="Phone Bellevue Pet Adventures" class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transition-all duration-200 hover:bg-link hover:text-white"  type="button">
                         <i class="fa-solid fa-phone mx-auto"></i>
                     </button>
                   </a>
-                  <a href="mailto:info@bellevuepetadventures.com">
-                    <button class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-link hover:text-white" type="button">
+                  <a aria-label="Email Us" href="mailto:info@bellevuepetadventures.com">
+                    <button aria-label="Email Bellevue Pet Adventures" class="bg-white text-link shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 ransition-all duration-200 hover:bg-link hover:text-white" type="button">
                         <i class="fa-solid fa-envelope mx-auto" ></i>
                     </button>
                   </a>
@@ -149,16 +175,17 @@
                 </div>
               </div>
               
-              <div class="flex">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.2782629629273!2d-95.93022982439007!3d41.172097609322336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x879388f6fdb08ebb%3A0x4cf5121709a6d2e4!2sBellevue%20Pet%20Adventures!5e0!3m2!1sen!2sus!4v1704427857018!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+              <div class="flex flex-row justify-start">
+                  <a aria-label="Map of our location" class="block sm:hidden" href="https://www.google.com/maps/place/Bellevue+Pet+Adventures/@41.1720936,-95.9276549,15z/data=!4m6!3m5!1s0x879388f6fdb08ebb:0x4cf5121709a6d2e4!8m2!3d41.1720936!4d-95.9276549!16s%2Fg%2F1pv5_chrh?entry=ttu"><img  width="348" height="261" src="../../public/images/map.avif" alt="Google Map of Bellevue Pet Adventures"></a>
+                  <a class="hidden sm:block " href="https://www.google.com/maps/place/Bellevue+Pet+Adventures/@41.1720936,-95.9276549,15z/data=!4m6!3m5!1s0x879388f6fdb08ebb:0x4cf5121709a6d2e4!8m2!3d41.1720936!4d-95.9276549!16s%2Fg%2F1pv5_chrh?entry=ttu"><img  width="700" height="400" src="../../public/images/map.avif" alt="Google Map of Bellevue Pet Adventures"></a>
+                </div>
             </div>
             <hr class="my-6 border-blueGray-300">
             <div class="flex flex-wrap items-center md:justify-between justify-center">
               <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                 <div class="text-sm text-blueGray-500 font-semibold py-1">
                   Copyright © Powered by <span id="get-current-year">2023</span>
-                  <a href="https://www.paleblackdotllc.com" class="text-blueGray-500 hover:text-link" 
+                  <a aria-label="Visit who created our website" href="https://www.paleblackdotllc.com" class="text-blueGray-500 hover:text-link" 
                   target="_blank"> Pale Black Dot 
                 </div>
               </div>
@@ -166,6 +193,19 @@
           </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="../../script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z53T80FHE6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z53T80FHE6');
+    </script> -->
+
 </body>
 </html>

@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}", 
-    './**.{html,js}'
+    './**.{html,js}',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -29,15 +30,16 @@ module.exports = {
         '5xl': '4.210rem',
       },
       fontFamily: {
-        Gabriela: ['Gabriela, sans-serif'],
         Playfair: ['Playfair, sans-serif']
       },
       fontWeight: {
         normal: '400',
         bold: '700',
-      },
+      }
        
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }

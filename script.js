@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const aboutItems = document.querySelectorAll('.moreabout');
     const infoItems = document.querySelectorAll('.moreinfo');
 
-    const mobileMenu  = document.querySelector('#hamburger-icon');
-    mobileMenu.addEventListener('click', (e) => {
-        e.target.classList.toggle('open');
-    })
+    // const mobileMenu  = document.querySelector('#hamburger-icon');
+    // mobileMenu.addEventListener('click', (e) => {
+    //     e.target.classList.toggle('open');
+    // })
 
     menuItems.forEach(item => {
         item.addEventListener('click', (e) => {

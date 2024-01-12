@@ -1,22 +1,17 @@
 {
-  "name": "petadventures",
+  "name": "pet-mobile",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/petadventure/petadventures.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/petadventure/petadventures/issues"
-  },
-  "homepage": "https://github.com/petadventure/petadventures#readme",
   "devDependencies": {
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "flowbite": "^2.2.1"
   }
 }
