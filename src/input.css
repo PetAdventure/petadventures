@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@font-face {
+  font-family: "Playfair";
+  src: url('../public/fonts/PlayfairDisplay-Regular.ttf');
+  font-display: swap; 
+}
+
+* {
+  font-family: 'Playfair';
+  margin: 0; 
+  padding: 0;
+    
+}

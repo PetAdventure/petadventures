@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-    const menuItems = document.querySelectorAll('.menu-item');
-    const serviceItems = document.querySelectorAll('.service');
+    const menuItems = document.querySelectorAll('#service-button');
+    const serviceItems = document.querySelectorAll('#service');
 
     const aboutItems = document.querySelectorAll('.moreabout');
     const infoItems = document.querySelectorAll('.moreinfo');
 
-    const mobileMenu  = document.querySelector('#hamburger-icon');
-    mobileMenu.addEventListener('click', (e) => {
-        e.target.classList.toggle('open');
-    })
+    // const mobileMenu  = document.querySelector('#hamburger-icon');
+    // mobileMenu.addEventListener('click', (e) => {
+    //     e.target.classList.toggle('open');
+    // })
 
     menuItems.forEach(item => {
         item.addEventListener('click', (e) => {
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             {
                 return; 
             }
-
             else
             {
                 menuItems.forEach(item => {
@@ -25,10 +24,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 })
                 e.target.classList.add('selected')
                 serviceItems.forEach(item => {
-                    item.classList.remove('show');
+                    item.classList.remove('flex');
+                    item.classList.add('hidden')
                     if(item.classList.contains(e.target.innerHTML))
                     {
-                        item.classList.add('show');
+                        item.classList.remove('hidden');
+                        item.classList.add('flex')
                     }
                 })
             }
@@ -43,8 +44,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             {
                 return; 
             }
-
-
             else
             {
                 aboutItems.forEach(item => {
@@ -59,7 +58,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     }
                 })
             }
-            
         })
     })
 
